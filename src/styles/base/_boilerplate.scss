@@ -1,4 +1,18 @@
 ﻿//CSS Resets so we start with a fresh page with hidden margins and behaviours
+@use '../abstracts' as abs;
+
+//0. Root Styling::after
+#root {
+    margin: 0 auto;
+    text-align: center;
+    min-height:100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    
+}
 
 // 1. Use a more-intuitive box-sizing model
 *, *::before, *::after {

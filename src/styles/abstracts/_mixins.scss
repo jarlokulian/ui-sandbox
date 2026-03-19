@@ -1,14 +1,6 @@
 ﻿//Style rules that we can use in all of our styles.
 
 //Everytime we want to write a media query:
-
-@mixin readonly-cell {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    border-bottom: 1px solid var(--grey-200);
-}
-
 @mixin grid($rows: null, $columns: null, $gap: null, $row-gap: null, $column-gap: null) {
     display: grid;
     gap: $gap;
