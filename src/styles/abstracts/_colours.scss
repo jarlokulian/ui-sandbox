@@ -1,0 +1,68 @@
+﻿$colour-primary: hsl(214 98% 38.8%); //Bestrane Blue
+$colour-secondary: hsl(24 100% 62%); //Bestrane Orange
+$colour-dark: hsl(208 22.4% 13.1%); //Bestrane Black
+$colour-light: hsl(0 0% 100%); //Bestrane White
+
+$grey-50: hsl(0, 0%, 96.47%); 
+$grey-100: hsl(216, 56%, 96%);
+$grey-150: hsl(216, 56%, 98%);
+$grey-200: hsl(214, 28%, 89%);
+$grey-300: hsl(215, 11%, 67%);
+$grey-500: hsl(0, 0%, 54.9%); 
+$grey-600: hsl(0, 2%, 27%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+
+$header-button-blue: hsl(211.58, 49.35%, 30.2%);
+$header-button-border: hsl(211.58, 23.85%, 46.86%);
+$header-button-hover: hsl(211,28%,43%); 
+
+$grey-100-dark: hsl(216, 6%, 15%);
+$grey-150-dark: hsl(210, 5%, 17%);
+$grey-200-dark: hsl(214, 28%, 89%);
+$grey-300-dark: hsl(215, 11%, 67%);
+$grey-600-dark: hsl(213, 6%, 62%);
+$white-dark: hsl(225, 4%, 20%);
+$black-dark: hsl(240, 17%, 81%);
+
+$success: hsl(137.78, 55.1%, 90.39%);
+$success-darker: hsl(132.15, 75.96%, 40.78%);
+$neutral: hsl(202.5, 70.59%, 93.33%);
+$neutral-darker: hsl(201.94, 67%, 60.78%);
+
+$nearby: hsl(203.48, 69.7%, 93.53%);
+$nearby-darker: hsl(201.32, 66.67%, 55.29%);
+$assigned: hsl(192, 12.82%, 92.35%);
+$assigned-darker: hsl(200, 10.71%, 56.08%);
+$arrivingsoon: hsl(211 100% 77.3%);
+$arrivingsoon-darker: hsl(211 100% 42.1%); 
+$scheduled: hsl(184.46, 96.69%, 35.49%);
+$routine: hsl(211.43, 60%, 48.04%);
+$urgent: hsl(249.41, 40.8%, 50.98%);
+
+body {
+    --primary: hsl(214 98% 38.8%); //Bestrane Blue
+    --secondary: hsl(24 100% 62%); //Bestrane Orange
+    --bes-black: hsl(208 22.4% 13.1%); //Bestrane Black
+    --bes-white: hsl(0 0% 100%); //Bestrane White
+
+    --grey-50: hsl(0, 0%, 96.47%);
+    --grey-100: hsl(216, 56%, 96%);
+    --grey-150: hsl(216, 56%, 98%);
+    --grey-200: hsl(214, 28%, 89%);
+    --grey-300: hsl(215, 11%, 67%);
+    --grey-500: hsl(0, 0%, 54.9%);
+    --grey-600: hsl(0, 2%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+
+    .dark-mode {
+        --grey-100: hsl(216, 6%, 15%);
+        --grey-150: hsl(210, 5%, 17%);
+        --grey-200: hsl(214, 28%, 89%);
+        --grey-300: hsl(215, 11%, 67%);
+        --grey-600: hsl(213, 6%, 62%);
+        --white: hsl(225, 4%, 20%);
+        --black: hsl(240, 17%, 81%);
+    }
+}

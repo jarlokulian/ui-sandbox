@@ -1,0 +1,8 @@
+﻿.error-box {
+    display: flex;
+    padding: 1em;
+    
+    ul{
+     list-style-type: none;    
+    }
+}

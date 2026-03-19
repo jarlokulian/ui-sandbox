@@ -1,0 +1,26 @@
+﻿@use '../abstracts' as abs;
+
+.header {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    background: var(--primary);
+    height: 10em;
+
+    &__logo {
+        max-width: 20rem;
+        margin-left: 1em;
+    }
+
+    &__actions {
+        margin-right: 1em;
+        display:grid;
+        grid-template-columns: 20% 80%;
+        justify-content:center;
+        align-items:center;
+        height: 100%;
+    }
+}
+
+
+

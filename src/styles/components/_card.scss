@@ -1,0 +1,13 @@
+﻿.card {
+    padding: 2em;
+    background-color: var(--white);
+    border: 1px solid var(--grey-200);
+    border-radius: 1em;
+    height: 100%;
+
+    &__emph{
+        @extend .card;
+        background-color: var(--grey-50);
+        border: 1px solid var(--grey-50);
+    }
+}

@@ -1,0 +1,52 @@
+﻿// Styles related to text elements
+@use 'sass:math';
+
+//Store font family from Google fonts
+$font: "Roboto", sans-serif;
+
+* {
+    font-family: $font;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    font-display: fallback;
+    color: var(--grey-500);
+    text-decoration-skip-ink: none;
+}
+
+//Header Styling
+@for $i from 1 through 6 {
+    h#{7 - $i} {
+        font-size: 3.4em / 7 * $i;
+        overflow-wrap: break-word;
+        text-wrap: balance;
+    }
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.1; // Adds spacing above the text
+    margin-top: 0; // removes default magins
+}
+
+//Body Text Styling
+p {
+    margin-top: 0; // removes default margins
+    overflow-wrap: break-word;
+    text-wrap: pretty;
+}
+
+a, a:visited, a:active {
+    text-decoration: none; // removes default underline from links
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.section-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+

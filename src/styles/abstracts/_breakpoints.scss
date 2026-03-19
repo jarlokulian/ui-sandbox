@@ -1,0 +1,36 @@
+﻿@use 'functions' as f;
+@use 'sass:map';
+
+//Defines all the breakpoints for devices.
+//700px, 900px, 1440px : phone, tablet, larger screens
+
+//create a sass map to hold these values: 
+$breakpoints: (
+    'xsmall': f.em(770),
+    'small': f.em(900),
+    'medium': f.em(1100),
+    'large': f.em(1350),
+    'xlarge': f.em(1800)
+);
+
+@mixin breakpoint($size) {
+    @media (min-width: map.get($breakpoints,$size)){
+        @content        //loads all the style rules for the mixin.
+    }
+}
+
+.responsive-action {
+    &__large {
+        display: none;
+    }
+
+    @include breakpoint(xsmall) {
+        &__large {
+            display: block;
+        }
+
+        &__small {
+            display: none;
+        }
+    }
+}

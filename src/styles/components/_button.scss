@@ -1,0 +1,152 @@
+﻿@use '../abstracts' as abs;
+
+button {
+    overflow: visible;
+    border: 0;
+    font: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.button {
+    cursor: pointer;
+    color: abs.$white;
+    background: abs.$colour-secondary;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    margin-left: 1em;
+
+    &__single {
+        @extend .button;
+        margin-left: 0em;
+    }
+
+    &__icon {
+        @extend .button;
+        color: abs.$colour-secondary;
+        background: var(--white);
+        width: 2.5em;
+        height: 2.5em;
+        padding: 0.5em;
+        border: 1px solid var(--grey-200);
+    }
+
+    &__icon-only {
+        color: abs.$colour-secondary;
+        border: none;
+        background: var(--white);
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    &__inverse {
+        @extend .button;
+        display: flex;
+        background: white;
+        color: black;
+        border: 1px solid var(--grey-200);
+
+        &-text {
+            font-weight: 700;
+        }
+    }
+}
+
+.button[disabled] {
+    color: var(--grey-300);
+    background: var(--grey-600);
+    cursor: default;
+}
+
+.toggle {
+    position: relative;
+    width: 5rem;
+    height: 2.5rem;
+}
+
+.toggle__input {
+    background: var(--grey100);
+    -webkit-appearance: none;
+    border-radius: 99rem;
+    width: 100%;
+    height: 100%;
+    transition: background 250ms var(--curve);
+}
+
+.toggle__input:checked {
+    background: var(--orange);
+}
+
+.toggle__input:checked + .toggle__indicator {
+    transform: translateX(2.5rem);
+}
+
+.toggle__indicator {
+    height: 1.5rem;
+    width: 1.5rem;
+    background: var(--white);
+    border-radius: 99rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    pointer-events: none;
+    transition: transform 250ms var(--curve);
+}
+
+.pill-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75em;
+    background: abs.$header-button-blue;
+    border: 1px solid abs.$header-button-border;
+    border-radius: 5em;
+
+    &:hover {
+        background: abs.$header-button-hover;
+    }
+
+    &__icon {
+        background: var(--secondary);
+        border-radius: 5em;
+        padding: 0.15em;
+    }
+
+    &__text {
+        font-weight: 700;
+        color: abs.$white;
+    }
+}
+
+.circle-button {
+    background: abs.$header-button-blue;
+    border: 1px solid abs.$header-button-border;
+    padding: 1em;
+    border-radius: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: abs.$header-button-hover;
+    }
+
+    &__header {
+        @extend .circle-button;
+        height: 2.25em;
+        width: 2.25em;
+    }
+
+    &__icon {
+        @extend .circle-button;
+        background: abs.$colour-secondary;
+        border: 1px solid abs.$grey-100;
+        height: 1em;
+        width: 1em;
+    }
+}
+
+

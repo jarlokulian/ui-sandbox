@@ -1,0 +1,21 @@
+﻿.tabs
+{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--grey-200)
+}
+
+.tab-header {
+    color: --var(grey-200);
+    margin-right: 1em;
+    padding: 0.5em;
+}
+
+.active-tab {
+    font-weight: bold;
+    color: --var(black);
+    border-bottom: 2px solid var(--secondary);
+}
+
+.inactive-tab {
+}
